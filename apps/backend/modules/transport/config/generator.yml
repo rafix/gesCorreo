@@ -1,0 +1,39 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           GcTransport
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          gc_transport
+    with_propel_route:     1
+
+    config:
+      actions:
+        _new:  { label: Nuevo }
+        _edit: { label: Editar }
+        _delete: { label: Borrar }
+      fields:
+        domain:  { label: Dominio, help: Nombre del dominio de correo }
+        is_active:  { label: Activado, help: Determina si el dominio está activado o no }
+        deliver:  { label: Entrega, help: Método de entrega de correo }
+        sort_order:  { label: Prioridad, help: Prioridad del dominio de correo en el sistema }
+      list:
+        title:  Listado de dominios
+        display:  [is_active, domain, deliver, sort_order]
+        batch_actions:  
+          _delete: ~
+        
+        object_actions: 
+          _edit: ~
+          _delete: ~
+          enviar_correo:  ~
+        max_per_page:  10
+      filter:  ~
+      form:    ~
+      edit:
+        title:  Editando el dominio "%%domain%%"
+      new:
+        title:  Nuevo dominio

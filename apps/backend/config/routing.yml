@@ -1,0 +1,68 @@
+gc_filtro_sender:
+  class: sfPropelRouteCollection
+  options:
+    model:                GcFiltroSender
+    module:               delta
+    prefix_path:          delta
+    column:               id
+    with_wildcard_routes: true
+
+gc_group:
+  class: sfPropelRouteCollection
+  options:
+    model:                GcGroup
+    module:               group
+    prefix_path:          group
+    column:               id
+    with_wildcard_routes: true
+
+gc_mailbox:
+  class: sfPropelRouteCollection
+  options:
+    model:               GcMailbox
+    module:              mailbox
+    prefix_path:         mailbox
+    column:              id
+    with_wildcard_routes: true
+
+gc_transport:
+  class: sfPropelRouteCollection
+  options:
+    model:               GcTransport
+    module:              transport
+    prefix_path:         transport
+    column:              id
+    with_wildcard_routes: true
+
+gc_area:
+  class: sfPropelRouteCollection
+  options:
+    model:               GcArea
+    module:              area
+    prefix_path:         area
+    column:              id
+    with_wildcard_routes: true
+
+# default rules
+homepage:
+  url:   /
+  param: { module: mailbox, action: index }
+
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*
+
+sf_guard_signin:
+  url:   /login
+  param: { module: sfGuardAuth, action: signin }
+
+sf_guard_signout:
+  url:   /logout
+  param: { module: sfGuardAuth, action: signout }
+
+sf_guard_password:
+  url:   /request_password
+  param: { module: sfGuardAuth, action: password }

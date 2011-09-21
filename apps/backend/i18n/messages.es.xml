@@ -1,0 +1,345 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+    <file orginal="global" source-language="en_US" datatype="plaintext">
+        <body>   
+            <trans-unit id="1">
+                <source>create</source>
+                <target>Nuevo</target>
+            </trans-unit>              
+            <trans-unit id="2">
+                <source>Actions</source>
+                <target>Acciones</target>
+            </trans-unit>              
+            <trans-unit id="3">
+                <source>filters</source>
+                <target>filtros</target>
+            </trans-unit>              
+            <trans-unit id="4">
+                <source>filter</source>
+                <target>filtrar</target>
+            </trans-unit>              
+            <trans-unit id="5">
+                <source>reset</source>
+                <target>limpiar</target>
+            </trans-unit>              
+            <trans-unit id="6">
+                <source>[0] no result|[1] 1 result|(1,+Inf] %1% results</source>
+                <target>[0] no existen resultados|[1] 1 resultado|(1,+Inf] %1% resultados</target>
+            </trans-unit>              
+            <trans-unit id="7">
+                <source>list</source>
+                <target>listado</target>
+            </trans-unit>              
+            <trans-unit id="8">
+                <source>delete</source>
+                <target>borrar</target>
+            </trans-unit>              
+            <trans-unit id="9">
+                <source>save</source>
+                <target>guardar</target>
+            </trans-unit>              
+            <trans-unit id="10">
+                <source>save and add</source>
+                <target>guardar y agregar nuevo</target>
+            </trans-unit>              
+            <trans-unit id="11">
+                <source>Your modifications have been saved</source>
+                <target>Las modificaciones han sido guardadas</target>
+            </trans-unit>      
+            <trans-unit id="12">
+                <source>Are you sure?</source>
+                <target>¿Esta seguro?</target>
+            </trans-unit>      
+            <trans-unit id="13">
+                <source>There are some errors that prevent the form to validate</source>
+                <target>Hay algunos errores, por favor corríjalos</target>
+            </trans-unit>      
+            <trans-unit id="14">
+                <source>no result</source>
+                <target>no existen resultados</target>
+            </trans-unit>      
+            <trans-unit id="15">
+                <source>Could not delete the selected %s </source>
+                <target>No puede eliminar el %s seleccionado</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>Could not delete the selected Establecimiento. Make sure it does not have any associated items.</source>
+                <target>No puede eliminar el Establecimiento seleccionado. Asegurese que no este siendo utilizado.</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>Could not delete the selected Turnos. Make sure it does not have any associated items.</source>
+                <target>No puede eliminar el Turno seleccionado. Asegurese que no este asociado a un servicio.</target>
+            </trans-unit>
+            <trans-unit id="18"> 
+                <source>permissions:</source>
+                <target>Permisos:</target>
+            </trans-unit>
+	    <trans-unit id="19"> 
+		    <source>Information</source>
+		    <target>Informacion</target>
+            </trans-unit>
+	    <trans-unit id="20"> 
+		    <source>Permissions and groups</source>
+		    <target>Permisos a grupos</target>
+            </trans-unit>
+	     <trans-unit id="21"> 
+		     <source>Last login:</source>
+		    <target>Ultimo ingreso:</target>
+            </trans-unit>
+	    <trans-unit id="22"> 
+		    <source>Groups/Roles:</source>
+		    <target>Grupos/Roles:</target>
+            </trans-unit>
+	    <trans-unit id="23"> 
+		    <source>Edit "%%username%%" user</source>
+		    <target>Editar usuario %%username%% </target>
+            </trans-unit>
+	    
+	    <trans-unit id="24"> 
+		    <source>Name:</source>
+		    <target>Nombre:</target>
+            </trans-unit>
+	    <trans-unit id="25"> 
+		    <source>Permissions:</source>
+		    <target>Permisos:</target>
+	    </trans-unit>
+	    <trans-unit id="26"> 
+		    <source>Unassociated</source>
+		    <target>Sin asociar</target>
+	    </trans-unit>        
+	    <trans-unit id="27"> 
+		    <source>Associated</source>
+		    <target>Asociado</target>
+	    </trans-unit>      
+	    <trans-unit id="28"> 
+		    <source>Description:</source>
+		    <target>Descripción</target>
+	    </trans-unit>      
+            <trans-unit id="29"> 
+		    <source>Edit "%%name%%" group</source>
+		    <target>Editar grupo %%name%% </target>
+            </trans-unit>
+            <trans-unit id="30"> 
+		    <source>Are you sure?</source>
+	            <target>Esta Seguro?</target>
+            </trans-unit>
+            <trans-unit id="31"> 
+		    <source>Next</source>
+	            <target>Siguiente</target>
+            </trans-unit>
+            <trans-unit id="32"> 
+		    <source>Previous</source>
+	            <target>Anterior</target>
+            </trans-unit>
+             <trans-unit id="33"> 
+		    <source>First</source>
+	            <target>Primero</target>
+            </trans-unit>
+             <trans-unit id="34"> 
+		    <source>Last</source>
+	            <target>Ultimo</target>
+            </trans-unit>
+            <trans-unit id="35"> 
+		    <source>results</source>
+	            <target>resultados</target>
+            </trans-unit>
+	    <trans-unit id="36"> 
+		    <source>no result</source>
+	            <target>Sin resultados</target>
+            </trans-unit>
+	    <trans-unit id="37"> 
+		    <source>username:</source>
+	            <target>Usuario:</target>
+            </trans-unit>
+	    <trans-unit id="38"> 
+		    <source>password:</source>
+	            <target>Clave:</target>
+            </trans-unit>
+	    <trans-unit id="37"> 
+		    <source>Remember me?</source>
+	            <target>Recordar usuario?</target>
+            </trans-unit>
+	    <trans-unit id="37"> 
+		    <source>Forgot your password?</source>
+	            <target>Olvido su clave?</target>
+            </trans-unit>
+	    <trans-unit id="38"> 
+		    <source>sign in</source>
+	            <target>Entrar</target>
+            </trans-unit>
+	    <trans-unit id="39"> 
+		    <source>add pupil</source>
+	            <target>agregar alumno</target>
+            </trans-unit>
+	    <trans-unit id="40"> 
+		    <source>Security</source>
+	            <target>Seguridad</target>
+            </trans-unit>
+	   
+	    <trans-unit id="41"> 
+		    <source>Your username is required</source>
+	            <target>Su usuario es obligatorio</target>
+            </trans-unit>
+	    <trans-unit id="42"> 
+		    <source>Your password is required</source>
+	            <target>Su clave es obligatoria</target>
+            </trans-unit>
+	     
+	    <trans-unit id="43"> 
+		    <source>Username or password is not valid.</source>
+	            <target>Usuario o clave no válidos</target>
+            </trans-unit>
+	    <trans-unit id="44"> 
+		    <source>Users</source>
+	            <target>Usuarios</target>
+            </trans-unit>
+	    <trans-unit id="45"> 
+		    <source>Groups</source>
+	            <target>Grupos</target>
+            </trans-unit>
+	    <trans-unit id="46"> 
+		    <source>Permissions</source>
+	            <target>Permisos</target>
+            </trans-unit>
+	    <trans-unit id="47"> 
+		    <source>Logout</source>
+	            <target>Salir</target>
+            </trans-unit>
+	    <trans-unit id="48"> 
+		    <source>The form is not valid because it contains some errors.</source>
+	            <target>El formulario no es válido porque continene algunos errores. </target>
+            </trans-unit>
+	    <trans-unit id="49">
+		    <source>Category</source>
+		    <target>Categoria</target>
+	    </trans-unit>
+	    <trans-unit id="50">
+		    <source>Name</source>
+		    <target>Nombre</target>
+	    </trans-unit>
+	    <trans-unit id="51">
+		    <source>Topics</source>
+		    <target>Temas</target>
+	    </trans-unit>
+	    
+      <trans-unit id="52">
+        <source>Category:</source>
+        <target>Categoria:</target>
+      </trans-unit>
+      <trans-unit id="53">
+        <source>Description</source>
+        <target>Descripción</target>
+      </trans-unit>
+      <trans-unit id="54">
+        <source>Description:</source>
+        <target>Descripción:</target>
+      </trans-unit>
+      <trans-unit id="55">
+        <source>Rank:</source>
+        <target>Ranking:</target>
+      </trans-unit>
+      <trans-unit id="56">
+        <source>Rank</source>
+        <target>Ranking</target>
+      </trans-unit>
+      <trans-unit id="57">
+        <source>Stripped name:</source>
+        <target>Nombre de enlace:</target>
+      </trans-unit>
+      <trans-unit id="58">
+        <source>Forums:</source>
+        <target>Foros:</target>
+      </trans-unit>
+           <trans-unit id="59">
+        <source>Username:</source>
+        <target>Usuario:</target>
+      </trans-unit>
+           <trans-unit id="60">
+        <source>Password:</source>
+        <target>Clave</target>
+      </trans-unit>
+           <trans-unit id="61">
+        <source>Password (again):</source>
+        <target>Repita la clave:</target>
+      </trans-unit>
+ 	    <trans-unit id="62"> 
+		    <source>Is active:</source>
+		    <target>Activo:</target>
+            </trans-unit>     
+ 	    <trans-unit id="63"> 
+		    <source>User list</source>
+		    <target>Lista de usuarios</target>
+            </trans-unit>   
+           <trans-unit id="64">
+        <source>Username</source>
+        <target>Usuario</target>
+      </trans-unit>
+           <trans-unit id="65">
+        <source>Created at</source>
+        <target>Creado en</target>
+      </trans-unit>
+           <trans-unit id="66">
+        <source>Last login</source>
+        <target>Ultimo Ingreso</target>
+      </trans-unit>
+
+           <trans-unit id="67">
+        <source>Group list</source>
+        <target>Lista de grupos</target>
+      </trans-unit>
+
+           <trans-unit id="68">
+        <source>Permission list</source>
+        <target>Lista de permisos</target>
+    
+      </trans-unit>
+      
+      	    <trans-unit id="69"> 
+		    <source>Edit "%%name%%" permission</source>
+		    <target>Editar permiso %%name%% </target>
+            </trans-unit>
+      <trans-unit id="70">
+        <source>There is no topic in this discussion yet. Perhaps you would like to %start%?</source>
+        <target>No hay temas en esta discusion. Quizas deseas %start%?</target>
+      </trans-unit>
+            <trans-unit id="71">
+        <source>The body cannot be left blank. Please enter some text</source>
+        <target>Elcuerpo no puede dejarse en blanco. Ingrese algun texto</target>
+      </trans-unit>
+            <trans-unit id="72">
+        <source>less than a minute</source>
+        <target>Menos de un minuto</target>
+      </trans-unit>
+            <trans-unit id="73">
+        <source>yes or no</source>
+        <target>si o no</target>
+      </trans-unit>
+            <trans-unit id="74">
+        <source>yes</source>
+        <target>si</target>
+      </trans-unit>
+     <trans-unit id="75">
+        <source>no</source>
+        <target>no</target>
+	</trans-unit>
+	
+	      	    <trans-unit id="76"> 
+		    <source>edit</source>
+		    <target>editar</target>
+            
+      
+	</trans-unit>
+	<trans-unit id="77"> 
+		    <source>This permission name already exists</source>
+		    <target>El permiso ya existe</target>
+            
+      
+	</trans-unit>
+
+    <trans-unit id="78">
+		    <source>extend</source>
+		    <target>extender</target>
+	</trans-unit>
+    </body>
+    </file>
+</xliff>

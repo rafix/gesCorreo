@@ -1,0 +1,55 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           GcMailbox
+    theme:                 admin15
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          gc_mailbox
+    with_propel_route:     1
+
+    config:
+      actions: ~
+      fields:
+        area_id:       { label: Área }
+        transport_id:  { label: Dominio }
+        group_id:      { label: Grupo }
+        email:         { label: Correo, help: Correo electrónico }
+        username:      { label: Usuario, help: Nombre de usuario }
+        passwd:        { label: Contraseña, help: Contraseña de la cuenta }
+        passwd_again:  { label: Confirmar, help: Repita la contraseña entrada }
+        name:          { label: Nombre, help: Nombre y apellidos del usuario }
+        quota:         { label: Cuota, help: Capacidad del buzón}
+        is_active:     { label: Activo, help: Activar o no el buzón }
+        expires_at:    { label: Expira, help: Fecha de expiración, date_format: dd/MM/yy }
+        sfilter:       { label: Nacional, help: Cuenta de correo nacional }
+      list:
+        batch_actions:
+          _delete:    ~
+          extend:     ~
+          disable:    ~
+          activar:    ~
+        object_actions:
+          _edit:      ~
+          extend:     ~
+          _delete:    ~
+        actions:
+          _new:       ~
+          deleteNeverActivated: { label: Borrar buzones nunca usados }
+        title:  Listado de usuarios
+        display:  [is_active, name, email, expires_at]
+        max_per_page:  50
+      filter:
+        display:  [area_id, group_id, transport_id, username, name, sfilter, is_active]
+      form:
+        display:  [area_id, group_id, name, username, transport_id, _vemail, passwd, passwd_again, quota, sfilter, is_active, access, created_at, expires_at]
+      edit:
+        title:  Editando el usuario "%%name%%"
+        fields:
+          created_at: { type: plain }
+          updated_at: { type: plain }
+      new:
+        title:  Nuevo usuario
+        display:  [area_id, group_id, name, username, transport_id, passwd, passwd_again, quota, sfilter, is_active]

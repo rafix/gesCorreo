@@ -1,0 +1,17 @@
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        gesCorreo
+    description:  Sistema de gestion de correo electronico
+    keywords:     correo, mail, gestion, postfix, mysql
+    language:     es
+    #robots:       index, follow
+
+  stylesheets:    [main.css]
+
+  javascripts:    []
+
+  has_layout:     true
+  layout:         layout

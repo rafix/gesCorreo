@@ -1,0 +1,53 @@
+propel:
+  gc_transport:
+    id:                ~
+    domain:            { type: varchar(128), required: true, index: unique }
+    deliver:           { type: varchar(128), required: true }
+    is_active:         { type: boolean, required: true, default: 0 }
+    sort_order:        { type: integer, required: true, default: 5 }
+
+  gc_mailbox:
+    id:                ~
+    area_id:           { type: integer, foreignTable: gc_area, foreignReference: id, required: true, onDelete: cascade }
+    group_id:          { type: integer, foreignTable: gc_group, foreignReference: id, required: true, onDelete: cascade }
+    transport_id:      { type: integer, foreignTable: gc_transport, foreignReference: id, required: true, onDelete: cascade }
+    email:             { type: varchar(255), required: true, index: unique }
+    username:          { type: varchar(255), required: true, index: unique }
+    passwd:            { type: varchar(255), required: true }
+    name:              { type: varchar(255), required: true }
+    quota:             { type: integer, required: true, default: 41943040 }
+    autoreply:         { type: boolean, required: true, default: 0 }
+    autoreply_text:    { type: varchar(255), required: false }
+    custom_mailfilter: { type: longvarchar, required: false }
+    homedir:           { type: varchar(255), required: true, default: '/userdata/virtual/' }
+    maildir:           { type: varchar(255), required: true }
+    uid:               { type: integer, required: true, default: 5000 }
+    gid:               { type: integer, required: true, default: 5000 }
+    postfix:           { type: boolean, required: true, default: 0 }
+    access:            { type: boolean, required: true, default: 0 }
+    disableimap:       { type: boolean, required: true, default: 0 }
+    disablepop3:       { type: boolean, required: true, default: 0 }
+    expires_at:        { type: timestamp, required: true }
+    created_at:        ~
+    is_active:         { type: boolean, required: true, default: 1 }
+    sfilter:           { type: boolean, required: true, default: 0 }
+
+  gc_area:
+    id:                ~
+    area:              { type: varchar(255), required: true, index: unique }
+    slug:              { type: varchar(255), required: true, index: unique }
+    phone:             { type: varchar(64), required: false }
+
+  gc_group:
+    id:                ~
+    group:             { type: varchar(255), required: true, index: unique }
+    quota:             { type: integer, required: true }
+    description:       { type: longvarchar, required: false }
+    slug:              { type: varchar(255), required: true, index: unique }
+
+  gc_filtro_sender:
+    id:                ~
+    email:             { type: varchar(255), required: true, index: unique }
+    rule:              { type: varchar(10), required: true, default: solo_cuba }
+    prioridad:         { type: integer, required: true, default: 0 }
+    desc:              { type: longvarchar, required: false }

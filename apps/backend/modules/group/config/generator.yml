@@ -1,0 +1,32 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           GcGroup
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          gc_group
+    with_propel_route:     1
+
+    config:
+      actions: ~
+      fields:  
+        group: {label: Grupo}
+      list:
+        max_per_page:  10
+        title:  Listado de grupos
+        batch_actions:  {}
+        object_actions:
+          _edit: ~
+          _delete: ~
+          enviar_correo:  ~
+        display:  [group, quota, slug, description]
+      filter:  ~
+      form:
+        display: [group, quota, description]
+      edit:
+        title:  Editando el grupo "%%group%%"
+      new:
+        title:  Nuevo grupo

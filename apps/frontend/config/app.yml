@@ -1,0 +1,3 @@
+all:
+  max_mailbox_on_homepage: 5
+  app_max_jobs_on_others: 2

@@ -1,0 +1,35 @@
+group:
+  url:      /group/:slug
+  class:    sfPropelRoute
+  param:    { module: group, action: show }
+  options:  { model: GcGroup, type: object }
+
+area:
+  url:      /area/:slug
+  class:    sfPropelRoute
+  param:    { module: area, action: show }
+  options:  { model: GcArea, type: object }
+
+mailbox_show_user:
+  url:    /mailbox/:username
+  class:  sfPropelRoute
+  options: { model: GcMailbox, type: object, method_for_criteria: doSelectActive }
+  param:  { module: mailbox, action: show }
+  requirements:
+    id: \d+
+    sf_method: [GET]
+
+homepage:
+  url:   /
+  param: { module: mailbox, action: index }
+
+gc_mailbox_search:
+  url:   /search
+  param: { module: mailbox, action: search }
+
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

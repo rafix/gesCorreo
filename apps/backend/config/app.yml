@@ -1,0 +1,3 @@
+# default values
+all:
+  active_days:  365
