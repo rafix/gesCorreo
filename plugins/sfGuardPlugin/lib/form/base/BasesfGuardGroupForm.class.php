@@ -22,7 +22,7 @@ abstract class BasesfGuardGroupForm extends BaseFormPropel
     ));
 
     $this->setValidators(array(
-      'id'                             => new sfValidatorPropelChoice(array('model' => 'sfGuardGroup', 'column' => 'id', 'required' => false)),
+      'id'                             => new sfValidatorChoice(array('choices' => array($this->getObject()->getId()), 'empty_value' => $this->getObject()->getId(), 'required' => false)),
       'name'                           => new sfValidatorString(array('max_length' => 255)),
       'description'                    => new sfValidatorString(array('required' => false)),
       'sf_guard_group_permission_list' => new sfValidatorPropelChoice(array('multiple' => true, 'model' => 'sfGuardPermission', 'required' => false)),

@@ -42,7 +42,7 @@ class GcMailboxPeer extends BaseGcMailboxPeer
         return sfConfig::get('sf_data_dir').'/mailbox.'.sfConfig::get('sf_environment').'index';
     }
 
-    static public function doDeleteAll($con = null) {
+    static public function doDeleteAll(PropelPDO $con = null) {
         if(file_exists($index = self::getLuceneIndexFile())) {
             sfToolkit::clearDirectory($index);
             rmdir($index);

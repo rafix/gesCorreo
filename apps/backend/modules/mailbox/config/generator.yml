@@ -26,6 +26,7 @@ generator:
         expires_at:    { label: Expira, help: Fecha de expiración, date_format: dd/MM/yy }
         sfilter:       { label: Nacional, help: Cuenta de correo nacional }
       list:
+        with: [GcArea, GcTransport, GcGroup]
         batch_actions:
           _delete:    ~
           extend:     ~

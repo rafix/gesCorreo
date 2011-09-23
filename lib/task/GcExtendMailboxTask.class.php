@@ -28,10 +28,11 @@ EOF;
     protected function execute($arguments = array(), $options = array())
     {
       $databaseManager = new sfDatabaseManager($this->configuration);
-
+      
       $criteria = new Criteria();
       $criteria->add(GcMailboxPeer::EXPIRES_AT, time(), Criteria::LESS_THAN);
       $mailboxs = GcMailboxPeer::doSelect($criteria);
+
       foreach ($mailboxs as $gc_mailbox) {
         $gc_mailbox->setExpiresAt(time() + 86400 * $options['days']);
         
